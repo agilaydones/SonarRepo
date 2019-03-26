@@ -1,0 +1,22 @@
+
+
+<table [class] = 'xy'>
+  <tr>
+    <th>
+      Name
+    </th>
+    <th>
+      Email
+    </th>
+    <th>
+      Birthday
+    </th>
+  </tr>
+  <tr *ngFor = "let p of people" >
+    <td>{{p.name | uppercase}}</td>
+    <td>{{p.email}}</td>
+    <td>{{p.birthday | date:['MMM/dd/yyyy']}}</td>
+  </tr>
+  
+</table>
+<button (click) =toggle() >Toggle</button>
